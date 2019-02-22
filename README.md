@@ -3,14 +3,14 @@
 #### By **Manuel Sande**
 ## Description
 This is a mock website of an online quiz on Javascript.  Users take the multiple
-choice quiz on the website, and see their scored on the website upon submitting                                   their answers.
+choice quiz on the website, and see their score on the website upon submitting                                   their answers.
 
 ## USER STORY
 * A user sees the multi-choice questions when the website loads. Correct choices
 are weighted.
 * A user can select their answer from the webpage.
 * A user can submit their answers when they are done taking the quiz.
-* A user can get their score after submitting their answers on the website.
+* A user can get their score on the website after submitting their answers. 
 
 ## Technologies Used
 JavaScript
