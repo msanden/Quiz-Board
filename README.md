@@ -1,5 +1,5 @@
-# Triangle Tracker Program
-#### Application identifies if input lengths form an isosceles, equilateral or a scalene triangle, or if the lengths can form a triangle at all. [2/15/2019]
+# Quiz Board Website
+#### This is a mock online quiz. Test takers answer multiple choice questions                                       and get a score on the website after submitting their answers.  [2/22/2019]
 #### By **Manuel Sande**
 ## Description
 The application uses the following guidelines to evaluate input:
@@ -12,10 +12,11 @@ less than the third remaining side, then a triangle CANNOT be formed using those
 values. (For example, the values 9, 4 & 3 cannot form a triangle.)
 
 ## USER STORY
-A user enters the length values of the three sides of their triangle.
-Upon submitting their values, the application should output what type of triangle
-the values will produce, whether an isosceles, equilateral, scalene or NO triangle
-at all.
+* A user sees the multi-choice questions when the website loads. Correct choices
+are weighted.
+* A user can select their answer from the webpage.
+* A user can submit their answers when they are done taking the quiz.
+* A user can get their score after submitting their answers on the website.  
 ## Technologies Used
 JavaScript
 ### License
