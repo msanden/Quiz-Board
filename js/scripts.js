@@ -18,10 +18,21 @@ $(document).ready(function(){
     /*var userSelects = [queOne, queTwo, queThree, queFour, queFive, queSix,
       queSeven, queEight, queNine, queTen];*/
 
-    var total = queOne+queTwo+queThree+queFour+queFive+queSix+queSeven+queEight+queNine+queTen;
+    var total = queOne+queTwo+queThree+queFour+queFive+queSix+queSeven+queEight
+    +queNine+queTen;
+
+    if (total<50) {
+      $("#comment1").text('Test again for a higher score.');
+    }
+    if (total>=50 && total<80) {
+      $('#comment2').text('Fair.');
+    }
+    if (total>=80) {
+      $('#comment3').text('Excellent.');
+    }
 
     //alert('Your Score is '+total);
-    $("#display").text(total);
+    $("#display").text('You scored '+ total+' points.');
 
   /*  userSelects.forEach(function(userSelect) {
       total += userSelect;
