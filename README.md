@@ -2,23 +2,19 @@
 #### This is a mock online quiz. Test takers answer multiple choice questions                                       and get a score on the website after submitting their answers.  [2/22/2019]
 #### By **Manuel Sande**
 ## Description
-The application uses the following guidelines to evaluate input:
-* For an equilateral triangle, all sides must be equal.
-* For an isosceles triangle, two sides are exactly equal.
-* For a scalene triangle, none of the sides are equal. However, the sum of any
-two sides of the triangle must be greater than the third side.
-* Most importantly, if the sum of any two sides of the triangle is equal to or
-less than the third remaining side, then a triangle CANNOT be formed using those
-values. (For example, the values 9, 4 & 3 cannot form a triangle.)
+This is a mock website of an online quiz on Javascript.  Users take the multiple
+choice quiz on the website, and see their scored on the website upon submitting                                   their answers.
 
 ## USER STORY
 * A user sees the multi-choice questions when the website loads. Correct choices
 are weighted.
 * A user can select their answer from the webpage.
 * A user can submit their answers when they are done taking the quiz.
-* A user can get their score after submitting their answers on the website.  
+* A user can get their score after submitting their answers on the website.
+
 ## Technologies Used
 JavaScript
+
 ### License
 MIT License
 
