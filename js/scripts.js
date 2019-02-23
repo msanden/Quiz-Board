@@ -1,5 +1,5 @@
 //business-logic
-var queTotals = 10;
+
 
 //user-interface logic
 $(document).ready(function(){
@@ -15,35 +15,20 @@ $(document).ready(function(){
     var q9 = parseInt($('input[name="nine"]:checked').val());
     var q10 = parseInt($('input[name="ten"]:checked').val());
 
-    /*var userSelects = [queOne, queTwo, queThree, queFour, queFive, queSix,
-      queSeven, queEight, queNine, queTen];*/
-
     var total = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;
 
     if (total<50) {
       $("#display").text('You scored '+ total+' points. Test again for a higher score.');
-//      $("#comment1").text('Test again for a higher score.');
     }
     else if (total>=50 && total<80) {
-      $("#display").text('You scored '+ total+' points. Fair.');
-//      $('#comment2').text('Fair.');
+      $("#display").text('You scored '+ total+' points. Good.');
     }
     else if (total>=80) {
       $("#display").text('You scored '+ total+' points. Excellent.');
-//      $('#comment3').text('Excellent.');
     }
     else {
       $("#display").text('Answer all questions to receive a score.');
     }
-
-    //alert('Your Score is '+total);
-
-
-  /*  userSelects.forEach(function(userSelect) {
-      total += userSelect;
-    });
-    alert(total);*/
-
     event.preventDefault();
   });
 });
@@ -67,6 +52,9 @@ $(document).ready(function(){
 
   });
 });
+
+/*var userSelects = [queOne, queTwo, queThree, queFour, queFive, queSix,
+  queSeven, queEight, queNine, queTen];
 
 selections.forEach(function(selection) {
   var userSelects = parseInt($('input[name= '+selection+':checked').val());
