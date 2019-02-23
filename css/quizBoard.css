@@ -1,4 +1,20 @@
 
+body {
+  margin: 10px;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+/*  border: 1px solid black;*/
+  padding-left: 50px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+/*  font-family: serif;*/
+}
+
 p{
   font-weight: bold;
 }
@@ -14,4 +30,14 @@ p{
 
 .panel-body {
   padding-top: 0px;
+}
+
+h1 {
+  color: #88D0AF;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+label {
+  font-family: fantasy;
 }
