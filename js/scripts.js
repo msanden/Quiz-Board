@@ -1,38 +1,43 @@
 //business-logic
-
+var queTotals = 10;
 
 //user-interface logic
 $(document).ready(function(){
   $('input[type="button"]').click(function(event){
-    var queOne = parseInt($('input[name="one"]:checked').val());
-    var queTwo = parseInt($('input[name="two"]:checked').val());
-    var queThree = parseInt($('input[name="three"]:checked').val());
-    var queFour = parseInt($('input[name="four"]:checked').val());
-    var queFive = parseInt($('input[name="five"]:checked').val());
-    var queSix = parseInt($('input[name="six"]:checked').val());
-    var queSeven = parseInt($('input[name="seven"]:checked').val());
-    var queEight = parseInt($('input[name="eight"]:checked').val());
-    var queNine = parseInt($('input[name="nine"]:checked').val());
-    var queTen = parseInt($('input[name="ten"]:checked').val());
+    var q1 = parseInt($('input[name="one"]:checked').val());
+    var q2 = parseInt($('input[name="two"]:checked').val());
+    var q3 = parseInt($('input[name="three"]:checked').val());
+    var q4 = parseInt($('input[name="four"]:checked').val());
+    var q5 = parseInt($('input[name="five"]:checked').val());
+    var q6 = parseInt($('input[name="six"]:checked').val());
+    var q7 = parseInt($('input[name="seven"]:checked').val());
+    var q8 = parseInt($('input[name="eight"]:checked').val());
+    var q9 = parseInt($('input[name="nine"]:checked').val());
+    var q10 = parseInt($('input[name="ten"]:checked').val());
 
     /*var userSelects = [queOne, queTwo, queThree, queFour, queFive, queSix,
       queSeven, queEight, queNine, queTen];*/
 
-    var total = queOne+queTwo+queThree+queFour+queFive+queSix+queSeven+queEight
-    +queNine+queTen;
+    var total = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;
 
     if (total<50) {
-      $("#comment1").text('Test again for a higher score.');
+      $("#display").text('You scored '+ total+' points. Test again for a higher score.');
+//      $("#comment1").text('Test again for a higher score.');
     }
-    if (total>=50 && total<80) {
-      $('#comment2').text('Fair.');
+    else if (total>=50 && total<80) {
+      $("#display").text('You scored '+ total+' points. Fair.');
+//      $('#comment2').text('Fair.');
     }
-    if (total>=80) {
-      $('#comment3').text('Excellent.');
+    else if (total>=80) {
+      $("#display").text('You scored '+ total+' points. Excellent.');
+//      $('#comment3').text('Excellent.');
+    }
+    else {
+      $("#display").text('Answer all questions to receive a score.');
     }
 
     //alert('Your Score is '+total);
-    $("#display").text('You scored '+ total+' points.');
+
 
   /*  userSelects.forEach(function(userSelect) {
       total += userSelect;
