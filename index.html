@@ -16,9 +16,9 @@
         <h1>North Ozark High School: JavaScript Final</h1>
       </div>
       <form id="quiz">
+        <label>Select one entry for each question. Attempt all questions.</label>
         <div class="panel">
           <div class="panel-body">
-          <label>Select one entry for each of the following questions.</label>
           <p>1. Which of the following is <em>TRUE</em> about variable naming
           conventions in JavaScript?</p>
           <input type="radio" name="one" value="10">
@@ -126,14 +126,21 @@
             <input type="radio" name="ten" value="0"> All of the above.
           </div>
         </div>
-        <div> <input type="button" name="score" value="Score">
-          <button type="reset" name="button">Reset</button>
+        <div class="panel">
+            <div id="display"> </div>
+            <div id="comment1"></div>
+            <div id="comment2"></div>
+            <div id="comment3"></div>
+            <div id="comment4"></div>
+        </div>
+        <div>
+          <input type="button" name="score" value="Score">
+          <input type="reset" name="button"></input>
         </div>
       </form>
-      <div id="display"> </div>
-      <div id="comment1"></div>
-      <div id="comment2"></div>
-      <div id="comment3"></div>
+      <br>
+
+
 
 <!--      <input type="button" name="score" value="Score">  -->
 <!--      <div>
