@@ -1,7 +1,8 @@
 //business-logic
 
 
-//user-interface logic
+
+//code for gathering user input: user-interface logic
 $(document).ready(function() {
   $('.clickable').click(function() {
     $('#initially-hidden').toggle();
@@ -9,9 +10,37 @@ $(document).ready(function() {
   });
 });
 
-
 $(document).ready(function(){
   $('input[type="button"]').click(function(event){
+    var queGroups = ['one','two','three','four','five','six','seven','eight','nine','ten'];
+    var userChoices = [];
+    queGroups.forEach(function(queGroup) {
+      userChoices.push(parseInt($('input[name=' + queGroup + ']:checked').val()));
+    });
+
+    var total = 0;
+    for (var index = 0; index < userChoices.length; index ++) {
+      total += userChoices[index];
+    }
+
+    if (total<50) {
+      $("#display").text('You scored '+ total+' points. Test again for a higher score.');
+    }
+    else if (total>=50 && total<80) {
+      $("#display").text('You scored '+ total+' points, Good.');
+    }
+    else if (total>=80) {
+      $("#display").text('You scored '+ total+' points, Excellent.');
+    }
+    else {
+      $("#display").text('Answer all questions to receive a score.');
+    }
+    event.preventDefault();
+  });
+});
+
+
+/* Code before re-factoring
     var q1 = parseInt($('input[name="one"]:checked').val());
     var q2 = parseInt($('input[name="two"]:checked').val());
     var q3 = parseInt($('input[name="three"]:checked').val());
@@ -24,51 +53,5 @@ $(document).ready(function(){
     var q10 = parseInt($('input[name="ten"]:checked').val());
 
     var total = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;
-
-    if (total<50) {
-      $("#display").text('You scored '+ total+' points. Test again for a higher score.');
-    }
-    else if (total>=50 && total<80) {
-      $("#display").text('You scored '+ total+' points. Good.');
-    }
-    else if (total>=80) {
-      $("#display").text('You scored '+ total+' points. Excellent.');
-    }
-    else {
-      $("#display").text('Answer all questions to receive a score.');
-    }
-    event.preventDefault();
-  });
-});
-
-/*
-$(document).ready(function(){
-
-  $('input[type="button"]').click(function(event){
-    alert(cow);
-    var selections = ['one','two','three','four','five','six','seven','eight',
-    'nine','ten'];
-
-    selections.forEach(function(selection) {
-      var userSelects = parseInt($('input[name= '+selection+':checked').val());
-    });
-
-    userSelects.forEach(function(userSelect) {
-      total += userSelect;
-    });
-    alert(total);
-
-  });
-});
-
-/*var userSelects = [queOne, queTwo, queThree, queFour, queFive, queSix,
-  queSeven, queEight, queNine, queTen];
-
-selections.forEach(function(selection) {
-  var userSelects = parseInt($('input[name= '+selection+':checked').val());
-});
-
-userSelects.forEach(function(userSelect) {
-  total += userSelect;
-});
-alert(total); */
+  })
+*/
