@@ -11,88 +11,118 @@
     <title>Quiz:JavaScript</title>
   </head>
   <body>
-<!--    <div class="sidebar">
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div> -->
     <div class="container">
-      <div class="caption">
-        <h1>North Ozark High School: JavaScript Final</h1>
+
+      <div class="sidebar">
+        <div class="panel panel-default">
+          <div class="panel-body panel-heading">
+            <ul class="nav nav-tabs navbar-left">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Dashboard</a></li>
+              <li role="presentation"><a href="#">Account</a></li>
+              <li role="presentation"><a href="#">Show Solution</a></li>
+              <li role="presentation"><a href="#">Show Time</a></li>
+              <li role="presentation"><a href="#">Need Help?</a></li>
+            </ul>
+          </div>
       </div>
+    </div>
+
+    <div class="float">
+      <h1>North Ozark High School: JavaScript Final</h1>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="row navrow">
+              <div class="col-md-10">
+                <ul class="nav nav-tabs navbar-left">
+                  <li role="presentation" class="active"><a href="#">Quit w/save</a></li>
+                  <li role="presentation"><a href="#">Exit Section</a></li>
+                </ul>
+                <ul class="nav nav-tabs navbar-right">
+                  <li role="presentation" class="active"><a href="#">Review</a></li>
+                  <li role="presentation"><a href="#">Calculator</a></li>
+                  <li role="presentation"><a href="#">Mark</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <form id="quiz">
         <div id="initially-showing">
-        <label>Select one entry for each question. Attempt all questions.</label>
-        <div class="panel">
-          <div class="panel-body">
-          <p>1. Which of the following is <em>TRUE</em> about variable naming
-          conventions in JavaScript?</p>
-          <input type="radio" name="one" value="10">
-          It is convention to give variables names that start with a
-          lowercase letter and to capitalize each word after the first,
-          without spaces or punctuation between words.<br>
-          <input type="radio" name="one" value="0">
-          It is convention to give variables names that start with an
-          uppercase letter and to follow each word after the first with
-          spaces or punctuation between words.<br>
-          <input type="radio" name="one" value="0"> None of the above.
+          <label>Select one entry for each question. Attempt all questions.</label>
+          <div class="panel">
+            <div class="panel-body">
+              <p>1. Which of the following is <em>TRUE</em> about variable naming
+              conventions in JavaScript?</p>
+              <input type="radio" name="one" value="10">
+              It is convention to give variables names that start with a
+              lowercase letter and to capitalize each word after the first,
+              without spaces or punctuation between words.<br>
+              <input type="radio" name="one" value="0">
+              It is convention to give variables names that start with an
+              uppercase letter and to follow each word after the first with
+              spaces or punctuation between words.<br>
+              <input type="radio" name="one" value="0"> None of the above.
+            </div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-body">
-            <p>2. What is a variable?</p>
-            <input type="radio" name="two" value="0">
-            A variable is an element that is liable to change.<br>
-            <input type="radio" name="two" value="10">
-            A variable is sort of like a container for storing values.<br>
-            <input type="radio" name="two" value="0">
-            A variable is a data item that may take on more than one value
-            during the runtime of a program.
+          <div class="panel">
+            <div class="panel-body">
+              <p>2. What is a variable?</p>
+              <input type="radio" name="two" value="0">
+              A variable is an element that is liable to change.<br>
+              <input type="radio" name="two" value="10">
+              A variable is sort of like a container for storing values.<br>
+              <input type="radio" name="two" value="0">
+              A variable is a data item that may take on more than one value
+              during the runtime of a program.
+            </div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-body">
-            <p>3. JavaScript is a programming language used to make
-            web pages interactive.</p>
-            <input type="radio" name="three" value="10"> True.<br>
-            <input type="radio" name="three" value="0"> False.
+          <div class="panel">
+            <div class="panel-body">
+              <p>3. JavaScript is a programming language used to make
+              web pages interactive.</p>
+              <input type="radio" name="three" value="10"> True.<br>
+              <input type="radio" name="three" value="0"> False.
+            </div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-body">
-            <p>4. jQuery is a JavaScript library that makes it easy to make
-            web pages interactive.</p>
-            <input type="radio" name="four" value="10"> True.<br>
-            <input type="radio" name="four" value="0"> False.
+          <div class="panel">
+            <div class="panel-body">
+              <p>4. jQuery is a JavaScript library that makes it easy to make
+              web pages interactive.</p>
+              <input type="radio" name="four" value="10"> True.<br>
+              <input type="radio" name="four" value="0"> False.
+            </div>
           </div>
-        </div>
-        <div class="panel">
-          <div class="panel-body">
-            <p>5. An escape operator is</p>
-            <input type="radio" name="five" value="0"> Used to interrupt
-            an operation by means of the escape key.<br>
-            <input type="radio" name="five" value="0"> A sort of container
-            for storing values.<br>
-            <input type="radio" name="five" value="10"> Used to manipulate
-            a string that contains quotation marks.
+          <div class="panel">
+            <div class="panel-body">
+              <p>5. An escape operator is</p>
+              <input type="radio" name="five" value="0"> Used to interrupt
+              an operation by means of the escape key.<br>
+              <input type="radio" name="five" value="0"> A sort of container
+              for storing values.<br>
+              <input type="radio" name="five" value="10"> Used to manipulate
+              a string that contains quotation marks.
+            </div>
           </div>
+          <li role="presentation"><span class="clickable">Next Page</span></li>
         </div>
-        <span class="clickable">Next Page</span>
-        </div>
+
         <div id="initially-hidden">
-        <div class="panel">
-          <div class="panel-body">
-            <p>6. Comments</p>
-            <input type="radio" name="six" value="0"> Are added
-            with the purpose of making the source code easier for humans to
-            understand.<br>
-            <input type="radio" name="six" value="0"> Are generally
-            ignored by compilers.<br>
-            <input type="radio" name="six" value="10"> All of the
-            above.
+          <div class="panel">
+            <div class="panel-body">
+              <p>6. Comments</p>
+              <input type="radio" name="six" value="0"> Are added
+              with the purpose of making the source code easier for humans to
+              understand.<br>
+              <input type="radio" name="six" value="0"> Are generally
+              ignored by compilers.<br>
+              <input type="radio" name="six" value="10"> All of the
+              above.
+            </div>
           </div>
-        </div>
         <div class="panel">
           <div class="panel-body">
             <p>7. Select which statement is <em>TRUE</em>.</p>
@@ -136,30 +166,18 @@
             <input type="radio" name="ten" value="0"> All of the above.
           </div>
         </div>
+
+        <h1><div id="display"> </div></h1>
         <span class="clickable">Previous Page</span>
-        <div class="panel">
-            <div id="display"> </div>
-        </div>
-        <div>
+        <div class="scoreClicker">
           <input type="button" name="score" value="Score">
           <input type="reset" name="button"></input>
         </div>
+        </div>
+
       </form>
-    </div>
-    </div>
+
+    </div> <!--question body end tag-->
+    </div> <!--container end tag-->
   </body>
 </html>
-
-
-<!--      <input type="button" name="score" value="Score">  -->
-<!--      <div>
-        <input type="button" name="score" value="Score">
-        <button type="reset" name="button">Reset</button>
-      </div>
-
-      <div id="display"> </div>
-      <div id="comment1"></div>
-      <div id="comment2"></div>
-      <div id="comment3"></div>
--->
-  <!-- <button type="button" class="btn btn-info btn-lg" ><a href="page2.html">Next Page</a></button> -->
