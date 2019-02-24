@@ -1,74 +1,68 @@
 
 body {
-  margin: 35px;
+  margin: 20px;
+  background-color:#F2F3EB;
 }
 
 #initially-hidden {
   display: none;
 }
 
-.clickable {
-  color: #0088cc;
-  cursor: pointer;
+.float {
+  float: right;
+  width: 85%;
+  display: inline-block;
 }
 
-.clickable:hover {
-  text-decoration: underline;
-}
-
-/* The side navigation menu */
 .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
+  margin-top: 150px;
+  float: left;
+  width: 15%;
+  display: inline-block;
   height: 100%;
-
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-
-.container {
-
-  display: block;
-  margin-left: 200px;
-  margin-right: auto;
-  border-radius: 15px;
-  width: 50%;
-  border: 1px solid black;
-  padding-left: 50px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-/*  font-family: serif;*/
+  position: relative;
 }
 
 p{
   font-weight: bold;
 }
 
+h1 {
+  color: #88D0AF;
+  text-align: center;
+  font-family: fantasy;
+}
+
+label {
+  font-family: fantasy;
+}
+
+li {
+  list-style: none;
+}
+
+.clickable {
+  color: #0088cc;
+  cursor: pointer;
+  float: right;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.scoreClicker{
+  text-align: center;
+}
+
+.navrow {
+  height: 50px;
+  padding-left: 30px;
+}
+
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #F1F6EF;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -82,14 +76,4 @@ p{
   border-width: thin;
   background-color: #D9E6DC;
 
-}
-
-h1 {
-  color: #88D0AF;
-  text-align: center;
-  font-family: fantasy;
-}
-
-label {
-  font-family: fantasy;
 }
