@@ -10,10 +10,10 @@ choice quiz on the website, and see their score on the website upon submitting  
 are weighted.
 * A user can select their answer from the webpage.
 * A user can submit their answers when they are done taking the quiz.
-* A user can get their score on the website after submitting their answers. 
+* A user can get their score on the website after submitting their answers.
 
 ## Technologies Used
-JavaScript
+Bootstrap, jQuery.
 
 ### License
 MIT License
