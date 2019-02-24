@@ -15,6 +15,15 @@ are weighted.
 ## Technologies Used
 Bootstrap, jQuery.
 
+## Setup/Installation Requirements
+No installations required outside Bootstrap, jQuery and a text editor. 
+
+## Known Bugs
+No known bugs.
+
+## Support and contact details
+Feel free to follow me on Github, or to comment on my code if you encounter any                                   issues, have questions or want to contribute to my code.
+
 ### License
 MIT License
 
