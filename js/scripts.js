@@ -2,6 +2,14 @@
 
 
 //user-interface logic
+$(document).ready(function() {
+  $('.clickable').click(function() {
+    $('#initially-hidden').toggle();
+    $('#initially-showing').toggle();
+  });
+});
+
+
 $(document).ready(function(){
   $('input[type="button"]').click(function(event){
     var q1 = parseInt($('input[name="one"]:checked').val());
